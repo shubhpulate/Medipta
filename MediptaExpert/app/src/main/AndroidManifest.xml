@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.mfitness.mediptaexpert">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/m_logo"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".PushReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="pushy.me" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="me.pushy.sdk.receivers.PushyUpdateReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="me.pushy.sdk.receivers.PushyBootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="me.pushy.sdk.services.PushySocketService"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DownloadPDF"/>
+        <activity
+            android:name=".ExpertDashboard"
+            android:label="@string/title_activity_expert_dashboard"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddStrengthExercise"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MediptaInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaidUserDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnpaidUserDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewGoalActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FitnessPackagesActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DietItemsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable_diet_item" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDietActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaidClientActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnpaidClientActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewDietPlansActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateDietPlanActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DietPlanDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpcomingCallActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TodayCallActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".CreatePackageActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".FoodNotAllowedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabletsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExpertProfileActivity"
+            android:label="@string/title_activity_expert_profile"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ExercisePlanActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".AddDietItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".CreateExercisePlanActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SelectExerciseActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".EditDietPlanActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".CardioActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".StrengthActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".AddCardioExercise"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ExerciseItemActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddExerciseItem"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".NotificationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ArticleActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ArticleDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UpdateDietItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".EditExePlanActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".StrengthDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".CardioDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AddArticleActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ProgressActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubscriptionExpiredActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UpdateProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".EditExeItemActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

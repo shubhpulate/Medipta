@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            android:elevation="5dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:text="Food Type"
+            android:layout_marginLeft="5dp"
+            android:textColor="#21ce99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerItemType"
+            android:gravity="right"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:text="Food Name"
+            android:layout_marginLeft="5dp"
+            android:textColor="#21ce99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto"
+            android:hint="e.g, Apple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txtInputQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Food Quantity"
+            android:id="@+id/edtQuantity"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:text="Item Unit"
+            android:layout_marginLeft="5dp"
+            android:textColor="#21ce99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerItemUnit"
+            android:gravity="right"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:translationZ="@dimen/padd_10"
+        android:stateListAnimator="@null"
+        android:background="@color/colorPrimary"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

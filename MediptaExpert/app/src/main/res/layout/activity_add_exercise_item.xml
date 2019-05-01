@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="5dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/lay_content_add_exercise"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnAddExerciseItem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="CREATE"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

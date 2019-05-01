@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="NAME"
+                    android:textSize="15sp"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtPersonName"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="CONTACT"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtUserContact"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="EMAIL"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtUserEmail"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="ADDRESS"
+                    android:textSize="15sp"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtPersonAddress"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="BMI"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtUserBMI"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="GENDER"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtUserGender"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="FITNESS GOAL"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtFitnessGoal"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:text="AGE"
+                    android:textSize="15sp"
+                    android:textColor="#1ba77c"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="--"
+                    android:id="@+id/txtUserAge"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21ce99</color>
+    <color name="colorPrimaryDark">#1ba77c</color>
+    <color name="colorAccent">#21ce99</color>
+    <color name="colorTV">#91000000</color>
+    <color name="bgBottomNavigation">#1ba77c</color>
+    <color name="bg_row_background">#E91E63</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+    <color name="blue">#FF4DA6E6</color>
+    <color name="lightgray">#ededed</color>
+
+</resources>

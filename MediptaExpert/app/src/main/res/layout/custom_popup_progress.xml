@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/currentImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_available"/>
+
+    </LinearLayout>
+
+    <!--<Spinner-->
+    <!--android:id="@+id/tagSpinner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:entries="@array/progress_list"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_weight="1">-->
+
+    <!--</Spinner>-->
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:maxLength="160"
+        android:inputType="textMultiLine"
+        android:hint="Enter Description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/addNewImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#48be91"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="ADD"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/resetImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:background="#48be91"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="CANCEL"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

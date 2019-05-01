@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/header_cover_image"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:padding="20dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:src="@drawable/logo" />-->
+
+            <ImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:elevation="5dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/medipta"
+                tools:ignore="UnknownId" />
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="@drawable/side_nav_bar"
+                android:elevation="4dp"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="24dp"
+                tools:ignore="UnknownId">
+
+                <TextView
+                    android:id ="@+id/user_profile_name"
+                    android:layout_width ="wrap_content"
+                    android:layout_height ="wrap_content"
+                    android:layout_centerHorizontal ="true"
+                    android:layout_marginTop = "30dp"
+                    android:text ="Shubham Pulate"
+                    android:textColor ="#fff"
+                    android:textSize ="24sp"
+                    android:textStyle ="bold" />
+
+                <TextView
+                    android:id="@+id/user_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Weigth maintain"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/user_gender"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/user_goal"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Male"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="14sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/user_age"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/user_gender"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="Age"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="14sp" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="Profile" />
+
+                <TextView
+                    android:id="@+id/txtViewGoal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="View Goal" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

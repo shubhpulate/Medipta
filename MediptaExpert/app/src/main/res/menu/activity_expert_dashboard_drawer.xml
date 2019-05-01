@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="My Profile"/>
+        <item
+            android:id="@+id/nav_update_profile"
+            android:icon="@drawable/update_profile"
+            android:title="Update Profile"/>
+        <item
+            android:id="@+id/nav_fitness_call"
+            android:title="Upcoming Fitness Call"
+            android:icon="@drawable/ic_call"/>
+        <item
+            android:id="@+id/nav_sub_expired"
+            android:title="Subscription Expired"
+            android:icon="@drawable/ic_person"/>
+        <item
+            android:id="@+id/nav_fitness_packages"
+            android:title="Fitness Packages"
+            android:icon="@drawable/ic_paid"/>
+        <item
+            android:id="@+id/nav_diet"
+            android:title="Diet Items"
+            android:icon="@drawable/ic_diet"/>
+        <item
+            android:id="@+id/nav_today_call"
+            android:title="Today's Call"
+            android:icon="@android:drawable/ic_menu_call"/>
+        <item
+            android:id="@+id/nav_exercise_item"
+            android:title="Exercise Items"
+            android:icon="@drawable/ic_exercise"/>
+        <item
+            android:id="@+id/nav_article"
+            android:title="Articles"
+            android:icon="@drawable/ic_book"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

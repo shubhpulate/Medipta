@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtStrengthExercise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/textbg"
+            android:drawableLeft="@drawable/ic_strength"
+            android:drawablePadding="50dp"
+            android:drawableRight="@drawable/ic_arrow_pink"
+            android:elevation="4dp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="20dp"
+            android:text="STRENGTH EXERCISE"
+            android:textColor="#1ba77c" />
+
+        <TextView
+            android:id="@+id/txtCardioExercise"
+            android:layout_below="@+id/txtStrengthExercise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/textbg"
+            android:drawableLeft="@drawable/ic_cardio"
+            android:drawablePadding="50dp"
+            android:drawableRight="@drawable/ic_arrow_pink"
+            android:elevation="4dp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="36dp"
+            android:paddingTop="20dp"
+            android:text="CARDIO EXERCISE"
+            android:textColor="#1ba77c" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

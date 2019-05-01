@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="LOGIN"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtLoginEmail"
+            android:background="@drawable/rounded_border"
+            android:hint="USERNAME"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:background="@drawable/rounded_border"
+            android:hint="PASSWORD"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtForgotPass"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="FORGOT PASSWORD"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNewUser"
+            android:text="NEW USER?"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/my_button"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

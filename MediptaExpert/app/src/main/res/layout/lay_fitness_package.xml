@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtPackageName"
+            android:textSize="20sp"
+            android:text="abc"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgFitnessImage"
+            android:layout_below="@+id/txtPackageName"
+            android:layout_marginTop="@dimen/padd_10"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:id="@+id/txtPackageType"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:layout_below="@+id/txtPackageName"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/txtPackageType"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:id="@+id/txtExercisePlans"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_below="@+id/txtExercisePlans"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDietPlans"
+            android:layout_below="@+id/txtDuration"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCalls"
+            android:layout_below="@+id/txtDietPlans"
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:text="abc"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:layout_below="@+id/txtCalls"
+            android:layout_toRightOf="@+id/imgFitnessImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_exeName"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtExerciseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:hint="Exercise Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Exercise Type"
+                android:layout_marginLeft="5dp"
+                android:textColor="#1ba77c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerExerciseItemType"
+                android:gravity="right"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_exeDescription"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtExerciseDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:hint="Description"/>
+                <!--android:lines="8"-->
+                <!--android:minLines="6"-->
+                <!--android:maxLines="10"-->
+                <!--android:scrollbars="vertical"-->
+                <!--android:gravity="top|left"-->
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padd_10"
+            android:layout_marginRight="@dimen/padd_10"
+            android:layout_marginLeft="@dimen/padd_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Image"
+                android:padding="@dimen/padd_10"/>
+            <Button
+                android:id="@+id/btnBrowseExe"
+                android:layout_marginTop="50dp"
+                android:text="Browse .."
+                android:background="@color/colorPrimary"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imgExeChosed"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/btnBrowseExe"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/btnBrowseExe"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#000" />
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
